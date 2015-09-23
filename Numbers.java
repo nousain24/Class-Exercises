@@ -11,7 +11,7 @@ public class Numbers {
 			num3 = keyboard.nextInt();
 			num4 = keyboard.nextInt();
 			num5 = keyboard.nextInt();
-			// Prompy user for 5 numbers
+			// Prompt user for 5 numbers
 			sum = num1+num2+num3+num4+num5;
 			average = ((num1+num2+num3+num4+num5)/5);
 			// Calculations for sum and average
