@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.chengen.one.Medical"
+    android:background="#c83642ee">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubMit"
+        android:id="@+id/btnMed"
+        android:background="#f87b7b"
+        android:textColor="#FFFF"
+        android:textSize="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Myself"
+        android:id="@+id/cbMy"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:textColor="#FFFF"
+        android:textSize="26dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Another"
+        android:id="@+id/cbAnother"
+        android:layout_alignTop="@+id/cbMy"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:textColor="#FFFF"
+        android:textSize="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description:"
+        android:id="@+id/textView3"
+        android:textColor="#FFFF"
+        android:textSize="26dp"
+        android:layout_below="@+id/cbMy"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMedDes"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/cbAnother"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Atach Photo:"
+        android:id="@+id/textView2"
+        android:textColor="#FFFF"
+        android:textSize="26dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/etMedDes"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/ivMed"
+        android:background="@drawable/cap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Medical"
+        android:id="@+id/textView16"
+        android:textSize="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Right Here"
+        android:id="@+id/btnMedMap"
+        android:layout_below="@+id/ivMed"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp"
+        android:textColor="#e55d34"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
